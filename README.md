@@ -77,7 +77,8 @@ public class SumOfDivided
                 result[j] = false;
         }
 
-        return result.Select((v, i) => new { value = v, index = i }).Where(x => x.value).Select(x => x.index).ToArray();
+        return result.Select((v, i) => new { value = v, index = i }).
+            Where(x => x.value).Select(x => x.index).ToArray();
     }
 }
 ```
